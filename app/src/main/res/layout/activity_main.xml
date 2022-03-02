@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="167dp"
+        android:layout_marginTop="122dp"
+        android:layout_marginEnd="167dp"
+        android:layout_marginBottom="590dp"
+        android:text="Hello World!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textSum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="177dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textHead" />
+
+    <TextView
+        android:id="@+id/tapCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="117dp"
+        android:layout_marginEnd="146dp"
+        android:text="Tap Count - 0"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textSum" />
+
+    <Button
+        android:id="@+id/btnTap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Click Here"
+        app:layout_constraintEnd_toEndOf="@+id/tapCount"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="@+id/tapCount"
+        app:layout_constraintTop_toBottomOf="@+id/tapCount" />
+
+    <Button
+        android:id="@+id/btnNextPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:singleLine="true"
+        android:text="Tip Calculator"
+        app:layout_constraintEnd_toEndOf="@+id/btnTap"
+        app:layout_constraintStart_toStartOf="@+id/btnTap"
+        app:layout_constraintTop_toBottomOf="@+id/btnTap" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

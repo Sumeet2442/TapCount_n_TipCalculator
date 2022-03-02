@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Coding_Basics</string>
+    <string name="tip_amt">Tip Amount = %s</string>
+    <string name="total_amt">Total Amount = %s</string>
+</resources>
